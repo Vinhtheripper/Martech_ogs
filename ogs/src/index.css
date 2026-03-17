@@ -1,0 +1,69 @@
+:root {
+  --font-body:
+    "Open Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-display:
+    "Trebuchet MS", "Gill Sans", "Segoe UI", sans-serif;
+  --color-ink: #182124;
+  --color-muted: #566063;
+  --color-surface: #ffffff;
+  --color-page: #f6f7f2;
+  --color-brand: #104627;
+  --color-brand-soft: #6a8950;
+
+  font-family: var(--font-body);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-ink);
+  background: var(--color-page);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-page);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+dl,
+dt,
+dd {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  color: var(--color-ink);
+}

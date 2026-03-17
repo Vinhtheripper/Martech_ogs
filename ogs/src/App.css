@@ -1,6 +1,10 @@
 .landing-page {
   position: relative;
   overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(58, 125, 72, 0.12), transparent 24%),
+    radial-gradient(circle at 85% 18%, rgba(130, 182, 98, 0.12), transparent 20%),
+    linear-gradient(180deg, #eef6ee 0%, #f7fbf6 100%);
 }
 
 .shell {
@@ -12,9 +16,10 @@
   position: sticky;
   top: 0;
   z-index: 30;
-  backdrop-filter: blur(18px);
-  background: rgba(246, 247, 242, 0.82);
-  border-bottom: 1px solid rgba(16, 70, 39, 0.08);
+  backdrop-filter: blur(14px);
+  background: rgba(8, 48, 27, 0.96);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(4, 29, 16, 0.18);
 }
 
 .top-bar-inner {
@@ -22,14 +27,14 @@
   grid-template-columns: auto 1fr auto;
   gap: 18px;
   align-items: center;
-  min-height: 72px;
+  min-height: 68px;
 }
 
 .brand-mark {
-  color: #104627;
-  font-size: 1.28rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
+  color: #ffffff;
+  font-size: 1.16rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -38,12 +43,12 @@
   justify-content: center;
   gap: 18px;
   flex-wrap: wrap;
-  color: #5a6264;
-  font-size: 0.88rem;
+  color: rgba(235, 244, 237, 0.78);
+  font-size: 0.82rem;
 }
 
 .top-bar-link {
-  color: #104627;
+  color: #ffffff;
   font-weight: 800;
   text-decoration: none;
 }
@@ -56,9 +61,9 @@
 
 .hero-section {
   background:
-    radial-gradient(circle at top left, rgba(212, 226, 201, 0.95), transparent 32%),
-    radial-gradient(circle at bottom right, rgba(106, 137, 80, 0.12), transparent 28%),
-    linear-gradient(180deg, #f6f8f2 0%, #ffffff 100%);
+    radial-gradient(circle at top left, rgba(120, 181, 98, 0.28), transparent 32%),
+    radial-gradient(circle at 82% 24%, rgba(16, 70, 39, 0.1), transparent 26%),
+    linear-gradient(180deg, #eef7ed 0%, #f5fbf4 48%, #edf6ed 100%);
 }
 
 .hero-shell {
@@ -119,6 +124,17 @@
   line-height: 1.8;
 }
 
+.hero-manifesto {
+  max-width: 640px;
+  margin-top: 18px;
+  padding-left: 18px;
+  border-left: 3px solid rgba(16, 70, 39, 0.22);
+  color: #104627;
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.85;
+}
+
 .hero-actions,
 .footer-actions,
 .section-cta {
@@ -174,9 +190,9 @@
 .hero-stats div {
   padding: 22px 20px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.86);
-  border: 1px solid rgba(16, 70, 39, 0.08);
-  box-shadow: 0 18px 40px rgba(16, 70, 39, 0.05);
+  background: rgba(247, 252, 246, 0.9);
+  border: 1px solid rgba(16, 70, 39, 0.12);
+  box-shadow: 0 18px 40px rgba(16, 70, 39, 0.08);
 }
 
 .hero-stats dt {
@@ -283,7 +299,8 @@
 }
 
 .intro-section {
-  background: #fff;
+  background:
+    linear-gradient(180deg, rgba(231, 243, 228, 0.7) 0%, rgba(247, 252, 246, 0.92) 100%);
 }
 
 .highlight-grid,
@@ -303,9 +320,9 @@
 .faq-card {
   padding: 28px;
   border-radius: 28px;
-  background: #fff;
-  border: 1px solid rgba(16, 70, 39, 0.08);
-  box-shadow: 0 20px 50px rgba(16, 70, 39, 0.06);
+  background: linear-gradient(180deg, #ffffff 0%, #f1f8f0 100%);
+  border: 1px solid rgba(16, 70, 39, 0.1);
+  box-shadow: 0 20px 50px rgba(16, 70, 39, 0.08);
 }
 
 .highlight-card h3,
@@ -321,15 +338,18 @@
 
 .panorama-section {
   padding: 0;
+  background: linear-gradient(180deg, #e3f0df 0%, #eef6ea 100%);
 }
 
 .panorama-section img {
-  height: 440px;
-  object-position: center center;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center top;
 }
 
 .category-section {
-  background: #fff;
+  background: linear-gradient(180deg, #eef7ec 0%, #f9fcf8 100%);
 }
 
 .category-shell {
@@ -346,7 +366,7 @@
 }
 
 .showcase-section {
-  background: linear-gradient(180deg, #f9faf7 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #f0f8ee 0%, #f7fbf5 100%);
 }
 
 .showcase-row {
@@ -413,7 +433,9 @@
 }
 
 .proof-section {
-  background: #f5f8f1;
+  background:
+    radial-gradient(circle at top right, rgba(123, 177, 99, 0.14), transparent 24%),
+    linear-gradient(180deg, #e8f2e4 0%, #f2f8ef 100%);
 }
 
 .proof-shell {
@@ -430,9 +452,9 @@
 .proof-card {
   padding: 28px;
   border-radius: 28px;
-  background: #fff;
-  border: 1px solid rgba(16, 70, 39, 0.08);
-  box-shadow: 0 20px 46px rgba(16, 70, 39, 0.06);
+  background: linear-gradient(180deg, #ffffff 0%, #f0f8ef 100%);
+  border: 1px solid rgba(16, 70, 39, 0.1);
+  box-shadow: 0 20px 46px rgba(16, 70, 39, 0.08);
 }
 
 .proof-card ul {
@@ -464,7 +486,7 @@
 }
 
 .gallery-section {
-  background: #fff;
+  background: linear-gradient(180deg, #f7fbf6 0%, #eef7ed 100%);
 }
 
 .gallery-grid {
@@ -474,9 +496,9 @@
 .gallery-card {
   overflow: hidden;
   border-radius: 28px;
-  background: #fff;
-  border: 1px solid rgba(16, 70, 39, 0.08);
-  box-shadow: 0 20px 50px rgba(16, 70, 39, 0.06);
+  background: linear-gradient(180deg, #ffffff 0%, #f2f9f1 100%);
+  border: 1px solid rgba(16, 70, 39, 0.1);
+  box-shadow: 0 20px 50px rgba(16, 70, 39, 0.08);
 }
 
 .gallery-card img {
@@ -489,8 +511,8 @@
 
 .faq-section {
   background:
-    radial-gradient(circle at top center, rgba(212, 226, 201, 0.58), transparent 34%),
-    #fff;
+    radial-gradient(circle at top center, rgba(126, 184, 100, 0.24), transparent 34%),
+    linear-gradient(180deg, #edf6eb 0%, #f8fcf7 100%);
 }
 
 .faq-grid {
@@ -498,8 +520,10 @@
 }
 
 .footer {
-  background: #fbfbf7;
-  border-top: 1px solid rgba(16, 70, 39, 0.08);
+  background:
+    radial-gradient(circle at left bottom, rgba(120, 176, 94, 0.14), transparent 28%),
+    linear-gradient(180deg, #eef7ed 0%, #e4f0e1 100%);
+  border-top: 1px solid rgba(16, 70, 39, 0.1);
 }
 
 .footer-shell {
@@ -605,7 +629,7 @@
   }
 
   .panorama-section img {
-    height: 300px;
+    height: auto;
   }
 }
 

@@ -1,4 +1,5 @@
 import './App.css'
+import heroImage from './assets/61266e0efb9a928437b3e993281c8344.jpg'
 
 const topBarItems = [
   'Mon - Sat | 08:00 - 17:00',
@@ -195,7 +196,7 @@ function App() {
             <div className="hero-image-stack">
               <img
                 className="hero-image-main"
-                src="https://w.ladicdn.com/s1050x800/69a2c7007baecc0013070ca8/g1-20260302033037-0ffby.jpg"
+                src={heroImage}
                 alt="OGS golf course setup"
               />
               <img
@@ -217,6 +218,12 @@ function App() {
               From replacement materials to operational hardware, OGS focuses on
               stable quality, structured deployment and long-term cost efficiency for
               premium golf facilities.
+            </p>
+            <p className="hero-manifesto">
+              We are not just bringing a product to Vietnam.
+              <br />
+              We equip our exclusive partner with a complete MarTech system,
+              market strategy, and execution model to build demand and lead the market.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="tel:02837244555">
